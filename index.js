@@ -6,5 +6,6 @@ var server = http.createServer(function (req, res) {
   readStream.pipe(res)
 })
 
-server.listen(process.env.PORT || 8080)  
-console.log('Server Started');  
+server.listen(process.env.PORT || 8080, function () {
+  console.log('Server Started');
+})  

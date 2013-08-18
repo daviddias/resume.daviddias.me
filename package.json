@@ -2,13 +2,15 @@
   "name": "cv",
   "version": "0.0.0",
   "description": "David Dias personal CV",
-  "main": "./index.js",
+  "main": "./index",
+  "private": false,
   "engines": {
     "node": "0.10.x",
     "npm":  "1.2.x"
   },
   "scripts": {
-    "start": "node ./index.js"
+    "start": "node index.js",
+    "test": "node index.js"
   },
   "keywords": [
     "cv",

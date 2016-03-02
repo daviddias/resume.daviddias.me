@@ -1,7 +1,7 @@
 CV
 ==
 
-Visit [http://cv.daviddias.me](http://cv.daviddias.me/) to get the latest version
+Visit [http://resume.daviddias.me](http://resume.daviddias.me/) to get the latest version
 
 # License
 

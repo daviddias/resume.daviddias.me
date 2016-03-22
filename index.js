@@ -1,11 +1,10 @@
-var http = require('http')
-  , fs = require('fs')
+const http = require('http')
+const fs = require('fs')
 
-var server = http.createServer(function (req, res) {
-  var readStream = fs.createReadStream('./data/cv.pdf')
-  readStream.pipe(res)
+const server = http.createServer((req, res) => {
+  fs.createReadStream('./data/cv.pdf').pipe(res)
 })
 
-server.listen(process.env.PORT || 8080, function () {
-  console.log('Server Started');
-})  
+server.listen(process.env.PORT || 8080, () => {
+  console.log('Server Started')
+})
